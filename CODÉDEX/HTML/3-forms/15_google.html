@@ -1,0 +1,57 @@
+<!--
+#Forms
+1. User enters some information.
+2. The user presses the submit button.
+3. The browser sends the information to a server.
+
+To create a form, we can use the <form> element.
+<form action="" method="">
+    More code will go here!
+</form>
+
+Two attributes are commonly used with the <form> element:
+    1. The "action" attribute that says where the form data should go after it is submitted.
+    2. The "method" attribute for how the form daa is processed.
+
+It is usually either sent somewhere esle via "post" or used with something else via "get".
+
+# INPUTS
+
+To enter the data, we use the <input> element as an interactive control for entering data.
+A "type" attribute is used to determine the kind of input to use.
+While there are many "type"s of inputs, the two we'll use most often are:
+
+    1. A "text" value that renders a plain textbox on the form.
+<form>
+  <input type="text">
+</form>
+    
+    2. A "submit" value that turns the <input> element into a button fpr submitting the form data.
+<form>
+  <input type="submit">
+</form>
+
+NOTE: The <input> element uses a self-closing tag.
+
+By default, the text of the "submit" input type will say "Submit", but this can be changed by setting a value attribute for the <input> element:
+<input type="submit" value="Submit Form!">
+
+FOR MORE INPUT TYPES: https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/input#input_types
+
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Searchbar</title>
+    </head>
+    <body>
+        <p>Search the web using Google!</p>
+        <form>
+            <input type="text" /><br>
+            <input type="submit" value="Google Search" />
+        </form>
+    </body>
+</html>
