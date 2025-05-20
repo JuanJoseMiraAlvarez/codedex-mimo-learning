@@ -1,0 +1,68 @@
+<!-- 
+ # Attributes
+ Additonal settings that we can use to customzize an element.
+ Usually name/values pairs, like name="value"., where name is the attribute and value is the value of the attribute.
+ They are used to provide additional information about an element. Separated by an equal sign.
+ <element name="value">Content</element>
+The name indicates the attribute we are setting for our element.
+The "value" for our attribute is surrounded by " double quotes.
+
+For example, by deafult, the <ol> element will create a numbered list.
+But we can use the "type" attribute to change the type of numbering used.
+<ol type="a">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+Or, if we want to create a list with roman numerals, we can use the "type" attribute with the value "i".
+<ol type="i">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+The "type" attribute is used to specify the type of numbering for the list items.
+
+<img src="https://www.codedex.io/images/tier1.png">
+The "src" attribute is used to specify the source of the image.
+
+And remember that width="250" attribute from the previous exercise? Yup! That was an attribute that sets the width of the image.
+
+In addition to src, we can also use the alt attribute to make our images more accessible.
+
+<img alt="pixel girl using a laptop" src="https://www.codedex.io/images/tier1.png">
+
+If our image can't appear for some reason, the alt text is displayed instead! 
+This allows assistive devices to read our text and describe the image.
+
+## Attribute in Anchor Tag
+The anchor tag <a> is used to create hyperlinks.
+The href attribute is used to specify the URL of the page the link goes to.
+<a href="https://www.codedex.io">Codedex</a>
+The href attribute is where we add a URL that can be visited when the hyperlinked text is clicked.
+
+We can also use the target attribute and set it to "_blank" to make the link open in a new browser tab:
+<a href="https://www.codedex.io/" target="_blank">Codédex</a>
+----------------------------------------------------------------------------------------------------------------------------------------
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wiki Article</title>
+    </head>
+    <body>
+        <h1>José Saramago</h1>
+        <img src="https://en.wikipedia.org/wiki/File:JSJoseSaramago.jpg" alt="José Saramago" width="250">
+        <p>José Saramago was a Portuguese writer and Nobel Prize winner.<br>
+        He was born on November 16, 1922, in Azinhaga, Portugal, and died on June 18, 2010, in Lanzarote, Spain.<br>
+        Saramago is known for his unique narrative style and philosophical themes.</p>
+        </p>
+        <p><a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Saramago" target="_blank">Read more about José Saramago</a></p>
+        <h2>Notable Works</h2>
+        <ol type="i">
+            <li>Blindness</li>
+            <li>The Gospel According to Jesus Christ</li>
+            <li>Death with Interruptions</li>
+    </body>
+</html>

@@ -1,0 +1,117 @@
+<!--
+#The Style Attrbitute
+We can use the Style attribute to stylize ceratin aspects of our HTML elements.
+
+Uses a special syntax where a style is made of a property and a value (propertie = Color, value = red).
+The property and value are separated by a colon, and the different properties are separated by semicolons.
+
+This attribute uses a special syntax where a style is made of a property (i.e., color) and a value (red), separated by a : colon.
+Multiple styles can be applied to a single element, but they must be separated by a ; semi-colon
+
+<p>
+  Roses are <span style="color:red; text-decoration:underline;">red</span>.<br />
+  Violets are <span style="color:blue; text-decoration:underline;">blue</span>.
+</p>
+
+The following is the rendered paragraph with our styles applied to the <span> elements:
+The color property sets the color for the text of an element.
+The text-decoration adds text formatting (such as underline), similar to what the <b>, <i>, <u>, and <s> elements do.
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#The <style> element
+
+Using the style attribute for a few elements is one thing. But what if we want to add styles to a bunch of different elements?
+Or what if we want to add the same styles to each instance of a specific element?
+
+Alternatively, the <style> element can be used in the <head> to style our elements in the <body>.
+    <!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      ... Styles for elements go here
+    </style>
+  </head>
+  <body>
+    ... Elements go here
+  </body>
+</html>
+
+Elements can be selected inside the <style> element using { } curly braces:
+    <style>
+  element {
+    property: value;
+  }
+</style>
+
+Remember when we learned about the class and id attributes?
+Inside the <style> element, you can use a period . (class) or hashtag # (id) to select one or more specific elements that have a matching class or id, respectively:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      span {
+        text-decoration: underline;
+      }
+
+      #red-word {
+        color: red;
+      }
+
+      #blue-word {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Roses are <span id="red-word">red</span>.<br />
+      Violets are <span id="blue-word">blue</span>.<br />
+    </p>
+  </body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Power Rangers</title>
+        <style>
+            .ranger-div {
+                width: 50px;
+                height: 100 px;
+            }
+
+            #red-ranger {
+                background-color: red;
+            }
+            #blue-ranger {
+                background-color: blue;
+            }
+            #green-ranger {
+                background-color: green;
+            }
+            #pink-ranger {
+                background-color: pink;
+            }
+            #yellow-ranger {
+                background-color: yellow;
+            }
+            #black-ranger {
+                background-color: black;
+            }
+            #white-ranger {
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ranger-div" id="red-ranger"></div>
+        <div class="ranger-div" id="blue-ranger"></div>
+        <div class="ranger-div" id="green-ranger"></div>
+        <div class="ranger-div" id="pink-ranger"></div>
+        <div class="ranger-div" id="yellow-ranger"></div>
+        <div class="ranger-div" id="black-ranger"></div>
+        <div class="ranger-div" id="white-ranger"></div>
+    </body>
+</html>
