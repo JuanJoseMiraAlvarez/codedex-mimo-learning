@@ -1,0 +1,51 @@
+<!--
+The <form> and <input> elements are for accepting (and eventually processing) user input.
+The <input> element comes with many types, including number, checkbox, and radio.
+We can also enter information for dates or color in the <input> element.
+The <textarea> is for longer text input and the <label> element helps organize a form.
+Forms have ways of validating user input, including requiring certain information to be submitted.
+
+<form>
+  <label></label>
+  <input type ="text" minlength="" maxlength="">
+  <input type ="number" min="" max="">
+  <input type ="checkbox">
+  <input type ="radio">
+
+  <textarea>Text here</textarea>
+  
+  <input type="email" required>
+  <input type="password" required>
+  <input type="submit" required>
+</form>
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welp!</title>
+    </head>
+    <body>
+        <form>
+            <h2>Welp! Review Form</h2>
+            <label>Reviewer Name: </label><input type="text" minlength="3" maxlength="20" />
+            <br><br>
+            <label>What are you reviewing? </label><input type="text" minlength="3" maxlength="50" />
+            <br><br>
+            <label>Would you try again?</label>
+            <br>
+            <input type="radio" name="try-again" /> No
+            <input type="radio" name="try-again" /> Not sure 
+            <input type="radio" name="try-again" /> Yes
+            <br><br>
+            <label>What's your rating? (1-5) </label><input type="number" min="1" max="5" required />
+            <br><br>
+            <label>My Review</label>
+            <textarea id="review" maxlength="250" placeholder="Enter your review"></textarea>
+            <br><br>
+            <input type="submit" value="Submit Review"/>
+        </form>
+    </body>
+</html>

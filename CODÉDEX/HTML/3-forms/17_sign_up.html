@@ -1,0 +1,47 @@
+<!--
+#Input Validation
+
+When the form has a "password" type, we can mask the text input. 
+And also, we can give it a "minlength" and "maxlength" attribute.
+
+<input type="password" minlength="4" maxlength="10">
+
+# Required Data
+
+Sometimes, we need input to be submitted, so we have the "required" attribute.
+It can be applied to one or more form inputs to enforce this.
+
+<form method="dialog">
+    Name: <input type="text" required>
+    <br><br>
+    Favorite Color: <input type="text">
+    <input type="submit">
+</form>
+
+The <input> element for a "Name" is marked with the "required" attribute.
+
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign up</Title>
+    </head>
+    <body>
+        <form>
+            <h2>Sign up</h2>
+            Username: <input type="text" minlength="4" maxlength="10" required />
+            <br><br>
+            Email: <input type="email" required />
+            <br><br>
+            Password: <input type="password" minlength="4" maxlength="10" required/>
+            <br><br>
+            Confirm Password: <input type="password" minlength="4" maxlength="10" required/>
+            <br><br>
+            <input type="submit">
+            <br><br>
+        </form>
+    </body>
+</html>
+

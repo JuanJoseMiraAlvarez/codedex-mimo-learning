@@ -1,0 +1,77 @@
+<!--
+# Input Type: Number
+
+<input> element for numbers:
+<input type="number">
+
+When hovering over the <input> two arrows appear; moves the value up and down
+1 unit, but we can change that with the <step> attribute.
+
+<input type="number" step="2">
+
+we can also add a "max" and "min" attribute to set how low or high the input can go.
+
+<input type="number" min="1" max="42">
+
+# Input Type: Checkbox and Radio
+
+The "checkbox" type renders as a box that's ticked off to mark the input as "finished"
+or "complete".
+
+<h3>Favorite Movie Genres</h3>
+<input type="checkbox"> Action<br>
+<input type="checkbox"> Sci-Fi<br>
+<input type="checkbox"> Rom-Com<br>
+<input type="checkbox"> K-Drama<br>
+<input type="checkbox"> Documentary<br>
+
+Next, there's the "radio" button type, is a list of options, BUT, just one can be selected.
+
+<h3>Which do you think?</h3>
+<input type="radio"> Yanny
+<br>
+<input type="radio"> Laurel
+
+But for this to work, we have to assign them a matching "name" attribute to each "radio" input type.
+This puts them in the same group of options to choose from.
+
+<h3>Which do you think?</h3>
+<input type="radio" name="option"> Yanny
+<br>
+<input type="radio" name="option"> Laurel
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RSVP</title>
+    </head>
+    <body>
+        <form>
+            <h2>RSVP</h2>
+            <p>Come and make our special day more awesome!</p>
+            <br>
+            First Name: <input type="text" />
+            <br><br>
+            Last Name: <input type="text /">
+            <br><br>
+            Are you coming?<br>
+            Yes<input type="radio" name="invite" />
+            No<input type="radio" name="invite" />
+            Maybe<input type="radio" name="invite" />
+            <br><br>
+            Any dietary restrictions for main course?<br>
+            <input type="checkbox" /> None<br>
+            <input type="checkbox" /> Vegetarian<br>
+            <input type="checkbox" /> Vegan<br>
+            <input type="checkbox" /> Gluten-free<br>
+            <input type="checkbox" /> Dairy-free
+            <br><br>
+            <input type="submit" />
+        </form>
+    </body>
+</html>
+
+
+
