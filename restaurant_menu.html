@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Klingon Restaurant</title>
+    </head>
+    <body>
+        <header>
+            <figure>
+                <img 
+                width="200px"
+                id="header-img" 
+                src="https://media.cnn.com/api/v1/images/stellar/prod/180626121052-star-trek-worf-01.jpg?q=w_1160,c_fill/f_webp">
+            </figure>
+            <h1>Klingon Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><h2><a href="#menu">Menu</a></h2></li>
+                    <li><h2><a href="#order-form">Order here!</a></h2></li>
+                </ul>
+            </nav>
+        </header>
+        <br/><hr/><br/>
+        <main>
+            <section id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li>   
+                        <article>
+                            <h3>Vulcan Burguer</h3>
+                            <figure>
+                                <img width="150px" src="https://preview.redd.it/what-is-the-infamous-picture-of-a-burger-on-the-wall-v0-dsbtbum2wo2d1.jpeg?width=800&format=pjpg&auto=webp&s=55302de2a46ad82600be3851c8f9ad4d9f690242">
+                                <figcaption><i>Spock's favorite</i></figcaption>
+                            </figure>
+                            <p>Vulcan bread, space cow's american cheese, Romulan pickles<br>
+                            <i>129,99 Federation Credtis</i>
+                            </p>
+                        </article>
+                    </li>
+                    <hr/>
+                    <li>
+                        <article>
+                            <h3>Romulan Salad</h3>
+                            <figure>
+                                <img width="175px" src="https://www.seriouseats.com/thmb/E6HP_76vmtiIqvBK39Rth-S-DC4=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2014__02__20140215-ctb-robertas-romaine-salad-1ec5d5ee35bf4d11a60090bf66b8a5ad.jpg">
+                                <figcaption><i>With Romulan Spices</i></figcaption>
+                            </figure>
+                            <p>Romulan lettuce, Space cow's <i>parmessan</i> cheese, Earth's <i>Crouttons</i><br>
+                            <i>109,99 Federation Credtis</i>
+                            </p>
+                        </article>
+                    </li>
+                    <hr/>
+                    <li>
+                        <article>
+                            <h3>Orion Onion Rings</h3>
+                            <figure>
+                                <img width="150px" src="https://as2.ftcdn.net/v2/jpg/13/98/46/05/1000_F_1398460595_z9hv3KT61giqVY35M1JT5Hua0otxQ6bA.jpg">
+                                <figcaption><i>Rings around Orion's Onions</i></figcaption>
+                            </figure>
+                            <p>Vulcan Onions, Earth's Panko, Romulan Kétchup<br>
+                            <i>89,99 Federation Credits</i>
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <br/><hr/><br/>
+            <section id="order-form">
+                <h2>Place your order!</h2>
+                <p><b>10</b> Max orders <i>per</i><u> item</u></p>
+                <form>
+                    <label>Vulcan Burguer: <input type="number" min="0" max="10" required></label>
+                    <br/><br/>
+                    <label>Romulan Salad: <input type="number" min="0" max="10" required></label>
+                    <br/><br/>
+                    <label>Orion Onion Rings: <input type="number" min="0" max="10" required></label>
+                </form>
+                <br/>
+                <h3>Sides</h3>
+                <form>
+                    <label><input type="checkbox">Borg mustard (<i>+ 20 Federation Credits</i>)</label><br>
+                    <label><input type="checkbox">Scotty's Secret Sauce (<i>+ 30 Federation Credits</i>)</label><br>
+                    <label><input type="checkbox">Sahara's water bottle (<i>+ 50 Federation Credits</i>)</label><br>
+                    <label><input type="checkbox">USS Chocolate Lava Cake (<i>+ 90 Federation Credits</i>)</label><br>
+                    <br/>
+                    <h3>Cutlery?</h3>
+                    <input type="radio" name="cutlery" required> Yes
+                    <input type="radio" name="cutlery" required> No
+                </form>
+                <br/>
+                <h3>Additional order information</h3>
+                <p><i>Add your preferences</i></p>
+                <textarea id="order-notes" rows="7" cols="40" placeholder="Enter your additional notes"></textarea><br>
+                <input type="submit">
+                <br/><br/>
+                <h3>Eat here or Take out</h3>
+                <input type="radio" name="option" required> Eat here
+                <input type="radio" name="option" required> Take out
+                <br/><br/>
+                <input type="submit" value="Go to Chekout!">
+                <br/><hr/><br/>
+            </section>
+        </main>
+        <footer>
+            <p>Made with love by: <i>@OrganicBrownKid</i></p>
+        </footer>
+    </body>
+</html>

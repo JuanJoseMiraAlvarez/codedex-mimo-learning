@@ -1,0 +1,60 @@
+<!--
+
+# The Header
+
+Usually, when visiting webpages, they have a space on top of everything, that contain the following:
+
+° Website logo.
+° Title of the site.
+° Search bar (usually to the right).
+° Some links to other parts of the site.
+° A button to sign in.
+
+This space is known as the "header" of the site.
+The element we for that is the <header> element:
+
+<body>
+  <header>
+    <h1>Welcome to My Site!</h1>
+  </header>
+</body>
+
+The <header> element always goes in the <body> element.
+It usually contains a heading element (<h1> - <h6>)
+
+NOTE: This is not to be confused with the <head> element that exists outside the <body> element.
+
+# Navigation
+
+The header page usually features links for navigation to other places within the site.
+
+The smenatinc element used for this is the <nav> element.
+This usually goes inside of a <header> element.
+
+<header>
+  <nav>
+    Links go here
+  </nav>
+</header>
+
+The <nav> element may contain ordered lists, unordered lists, or a combination of both.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Star Trek Blog</title>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to my USS ENTERPRISE</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-section">About</a></li>
+                    <li><a href="#stories-section">Stories</a></li>
+                    <li><a href="#contact-section">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </body>
+</html>
