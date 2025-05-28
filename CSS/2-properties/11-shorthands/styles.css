@@ -1,0 +1,9 @@
+h1 {
+    border: 2px dotted green;
+    text-align: center;
+}
+
+p {
+    font: 300 12em Chiller, fantasy;
+    text-align: center;
+}

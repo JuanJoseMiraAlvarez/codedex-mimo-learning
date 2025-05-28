@@ -1,0 +1,19 @@
+div#invite-wrapper {
+    width: 50%;
+    padding: 25px;
+    background-color: rgb(42, 40, 56);
+    color:beige
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+div#invite-text {
+    width: 85%;
+}
+
+div#intinerary {
+    text-align: center;
+}
